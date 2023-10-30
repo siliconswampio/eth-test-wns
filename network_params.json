@@ -6,5 +6,6 @@
   "seconds_per_slot": 12,
   "genesis_delay": 10,
   "capella_fork_epoch": 2,
-  "deneb_fork_epoch": 500
+  "deneb_fork_epoch": 500,
+  "electra_fork_epoch": "none"
 }
