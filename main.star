@@ -1,6 +1,6 @@
 # main.star
 geth = import_module("github.com/siliconswampio/geth-star-package/lib/geth.star")
-lighthouse = import_module("github.com/kurtosis-tech/lighthouse-package/lib/lighthouse.star")
+lighthouse = import_module("github.com/siliconswampio/lighthouse-package/lib/lighthouse.star")
 network_params = json.decode(read_file("./network_params.json"))
 
 def run(plan):
