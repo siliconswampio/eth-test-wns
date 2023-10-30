@@ -5,7 +5,7 @@ network_params = json.decode(read_file("./network_params.json"))
 
 def run(plan):
     # Generate genesis, note EL and the CL needs the same timestamp to ensure that timestamp based forking works
-    final_genesis_timestamp = geth.generate_genesis_timestamp()
+    final_genesis_timestamp = geth.generate_genesis_timestamp(plan)
     el_genesis_data = geth.generate_el_genesis_data(plan, final_genesis_timestamp, network_params)
 
     # NEW LINES TO ADD:
